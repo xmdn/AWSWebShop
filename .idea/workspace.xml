@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c57b807c-ea2d-477a-89e4-ea33640fedfc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/book.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/hero-background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ChechoutForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Hero.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/Products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/video_resources/api/mutations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/video_resources/api/queries.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/video_resources/api/subscriptions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ddd/ddd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +67,7 @@
       <updated>1642459169538</updated>
       <workItem from="1642459170703" duration="9000" />
       <workItem from="1642459215315" duration="552000" />
-      <workItem from="1642460753415" duration="1540000" />
+      <workItem from="1642460753415" duration="6335000" />
     </task>
     <servers />
   </component>
@@ -91,7 +79,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

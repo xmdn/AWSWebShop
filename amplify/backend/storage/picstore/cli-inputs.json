@@ -1,0 +1,18 @@
+{
+  "resourceName": "picstore",
+  "policyUUID": "6149b6e8",
+  "bucketName": "bucketstoreweb",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
