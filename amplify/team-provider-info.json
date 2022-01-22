@@ -1,31 +1,31 @@
 {
-  "dev": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-awswebshop-dev-21044-authRole",
-      "UnauthRoleArn": "arn:aws:iam::868414381183:role/amplify-awswebshop-dev-21044-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::868414381183:role/amplify-awswebshop-dev-21044-authRole",
-      "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-awswebshop-dev-21044-deployment",
-      "UnauthRoleName": "amplify-awswebshop-dev-21044-unauthRole",
-      "StackName": "amplify-awswebshop-dev-21044",
-      "StackId": "arn:aws:cloudformation:us-east-2:868414381183:stack/amplify-awswebshop-dev-21044/16e69050-77f3-11ec-acb0-0293ac8b1b7a",
-      "AmplifyAppId": "d2m0up9we8rgpb"
-    },
-    "categories": {
-      "auth": {
-        "awswebshop4c12be3f": {},
-        "true": {}
-      },
-      "function": {
-        "ProcessPayment": {
-          "deploymentBucketName": "amplify-awswebshop-dev-21044-deployment",
-          "s3Key": "amplify-builds/ProcessPayment-43436730456644345735-build.zip"
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-awswebshop-dev-21044-authRole",
+            "UnauthRoleArn": "arn:aws:iam::868414381183:role/amplify-awswebshop-dev-21044-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::868414381183:role/amplify-awswebshop-dev-21044-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-awswebshop-dev-21044-deployment",
+            "UnauthRoleName": "amplify-awswebshop-dev-21044-unauthRole",
+            "StackName": "amplify-awswebshop-dev-21044",
+            "StackId": "arn:aws:cloudformation:us-east-2:868414381183:stack/amplify-awswebshop-dev-21044/16e69050-77f3-11ec-acb0-0293ac8b1b7a",
+            "AmplifyAppId": "d2m0up9we8rgpb"
         },
-        "CreateOrder": {
-          "deploymentBucketName": "amplify-awswebshop-dev-21044-deployment",
-          "s3Key": "amplify-builds/CreateOrder-4754685a586750566161-build.zip"
+        "categories": {
+            "auth": {
+                "awswebshop4c12be3f": {},
+                "true": {}
+            },
+            "function": {
+                "ProcessPayment": {
+                    "deploymentBucketName": "amplify-awswebshop-dev-21044-deployment",
+                    "s3Key": "amplify-builds/ProcessPayment-43436730456644345735-build.zip"
+                },
+                "CreateOrder": {
+                    "deploymentBucketName": "amplify-awswebshop-dev-21044-deployment",
+                    "s3Key": "amplify-builds/CreateOrder-4754685a586750566161-build.zip"
+                }
+            }
         }
-      }
     }
-  }
 }
