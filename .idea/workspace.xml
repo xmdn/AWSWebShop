@@ -2,48 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c57b807c-ea2d-477a-89e4-ea33640fedfc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsonSchemas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/backend/storage/picstore/parameters.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CheckoutForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/books.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/BookDetails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Books.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Checkout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.graphqlconfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/api/AdminQueries/admin-queries-cloudformation-template.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/api/AdminQueries/parameters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/api/awswebshop/parameters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/api/awswebshop/schema.graphql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/api/awswebshop/transform.conf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/auth/userPoolGroups/parameters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/auth/userPoolGroups/user-pool-group-precedence.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/awscloudformation/nested-cloudformation-stack.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/backend-config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/AdminQueriesd78035dc/AdminQueriesd78035dc-cloudformation-template.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/AdminQueriesd78035dc/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/AdminQueriesd78035dc/src/cognitoActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/AdminQueriesd78035dc/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/AdminQueriesd78035dc/src/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/CreateOrder/CreateOrder-cloudformation-template.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/awswebshop32CreateAuthChallenge/amplify.state" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/awswebshop32CreateAuthChallenge/awswebshop32CreateAuthChallenge-cloudformation-template.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/awswebshop32CreateAuthChallenge/function-parameters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/awswebshop32CreateAuthChallenge/parameters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/awswebshop32CreateAuthChallenge/src/captcha-create-challenge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/awswebshop32CreateAuthChallenge/src/event.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/awswebshop32CreateAuthChallenge/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/awswebshop32CreateAuthChallenge/src/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/hosting/S3AndCloudFront/parameters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/hosting/S3AndCloudFront/template.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/.config/project-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/.config/project-config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/api/awswebshop/cli-inputs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/api/awswebshop/parameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/api/awswebshop/resolvers/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/api/awswebshop/schema.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/api/awswebshop/stacks/CustomResources.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/api/awswebshop/transform.conf.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/auth/awswebshop4c12be3f/cli-inputs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/backend-config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CreateOrder/CreateOrder-cloudformation-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CreateOrder/amplify.state" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/CreateOrder/amplify.state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CreateOrder/custom-policies.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CreateOrder/function-parameters.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/amplify/backend/function/CreateOrder/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/CreateOrder/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CreateOrder/src/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/CreateOrder/src/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/CreateOrder/src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/CreateOrder/src/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ProcessPayment/ProcessPayment-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/ProcessPayment/ProcessPayment-cloudformation-template.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/ProcessPayment/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/ProcessPayment/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/types/amplify-dependent-resources-ref.d.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/amplify/team-provider-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/team-provider-info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/queries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/subscreptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/subscreptions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ChechoutForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/mutations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/queries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/subscriptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/subscriptions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,29 +50,36 @@
         <option value="tsconfig.json" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="GraphQL File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/graphql/mutations.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="23qQWSRfuebCZVcvLHzMm3xhFf3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/amplify/backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/amplify/backend/function/CreateOrder" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -87,11 +87,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SOOP\Documents\GitHub\AWSWebShop\amplify\backend\function\CreateOrder" />
       <recent name="C:\Users\SOOP\Documents\GitHub\AWSWebShop\amplify\backend" />
       <recent name="C:\Users\SOOP\Documents\GitHub\AWSWebShop\src" />
       <recent name="C:\Users\SOOP\Documents\GitHub\AWSWebShop\amplify\backend\auth\awswebshop4c12be3f" />
       <recent name="C:\Users\SOOP\Documents\GitHub\AWSWebShop\amplify\backend\storage\picstore" />
-      <recent name="C:\Users\SOOP\Documents\GitHub\AWSWebShop\amplify\#current-cloud-backend\auth\awswebshop4c12be3f" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\SOOP\Documents\GitHub\AWSWebShop\src" />
@@ -130,7 +130,7 @@
       <workItem from="1642474084669" duration="6870000" />
       <workItem from="1642740754072" duration="1434000" />
       <workItem from="1642742223760" duration="15260000" />
-      <workItem from="1642837464638" duration="15090000" />
+      <workItem from="1642837464638" duration="36284000" />
     </task>
     <servers />
   </component>
@@ -159,5 +159,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

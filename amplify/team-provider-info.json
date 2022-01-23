@@ -24,7 +24,8 @@
                 "CreateOrder": {
                     "deploymentBucketName": "amplify-awswebshop-dev-21044-deployment",
                     "s3Key": "amplify-builds/CreateOrder-4754685a586750566161-build.zip"
-                }
+                },
+                "awswebshop32CreateAuthChallenge": {}
             }
         }
     }

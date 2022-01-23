@@ -1,43 +1,222 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createTodo = /* GraphQL */ `
-  mutation CreateTodo(
-    $input: CreateTodoInput!
-    $condition: ModelTodoConditionInput
+export const processOrder = /* GraphQL */ `
+  mutation ProcessOrder($input: ProcessOrderInput!) {
+    processOrder(input: $input)
+  }
+`;
+export const createBook = /* GraphQL */ `
+  mutation CreateBook(
+    $input: CreateBookInput!
+    $condition: ModelBookConditionInput
   ) {
-    createTodo(input: $input, condition: $condition) {
+    createBook(input: $input, condition: $condition) {
       id
-      name
+      title
       description
+      image
+      author
+      featured
+      price
+      orders {
+        nextToken
+      }
       createdAt
       updatedAt
     }
   }
 `;
-export const updateTodo = /* GraphQL */ `
-  mutation UpdateTodo(
-    $input: UpdateTodoInput!
-    $condition: ModelTodoConditionInput
+export const updateBook = /* GraphQL */ `
+  mutation UpdateBook(
+    $input: UpdateBookInput!
+    $condition: ModelBookConditionInput
   ) {
-    updateTodo(input: $input, condition: $condition) {
+    updateBook(input: $input, condition: $condition) {
       id
-      name
+      title
       description
+      image
+      author
+      featured
+      price
+      orders {
+        nextToken
+      }
       createdAt
       updatedAt
     }
   }
 `;
-export const deleteTodo = /* GraphQL */ `
-  mutation DeleteTodo(
-    $input: DeleteTodoInput!
-    $condition: ModelTodoConditionInput
+export const deleteBook = /* GraphQL */ `
+  mutation DeleteBook(
+    $input: DeleteBookInput!
+    $condition: ModelBookConditionInput
   ) {
-    deleteTodo(input: $input, condition: $condition) {
+    deleteBook(input: $input, condition: $condition) {
       id
-      name
+      title
       description
+      image
+      author
+      featured
+      price
+      orders {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const createBookOrder = /* GraphQL */ `
+  mutation CreateBookOrder(
+    $input: CreateBookOrderInput!
+    $condition: ModelBookOrderConditionInput
+  ) {
+    createBookOrder(input: $input, condition: $condition) {
+      id
+      book_id
+      order_id
+      order {
+        id
+        user
+        date
+        total
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+      book {
+        id
+        title
+        description
+        image
+        author
+        featured
+        price
+        createdAt
+        updatedAt
+      }
+    }
+  }
+`;
+export const updateBookOrder = /* GraphQL */ `
+  mutation UpdateBookOrder(
+    $input: UpdateBookOrderInput!
+    $condition: ModelBookOrderConditionInput
+  ) {
+    updateBookOrder(input: $input, condition: $condition) {
+      id
+      book_id
+      order_id
+      order {
+        id
+        user
+        date
+        total
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+      book {
+        id
+        title
+        description
+        image
+        author
+        featured
+        price
+        createdAt
+        updatedAt
+      }
+    }
+  }
+`;
+export const deleteBookOrder = /* GraphQL */ `
+  mutation DeleteBookOrder(
+    $input: DeleteBookOrderInput!
+    $condition: ModelBookOrderConditionInput
+  ) {
+    deleteBookOrder(input: $input, condition: $condition) {
+      id
+      book_id
+      order_id
+      order {
+        id
+        user
+        date
+        total
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+      book {
+        id
+        title
+        description
+        image
+        author
+        featured
+        price
+        createdAt
+        updatedAt
+      }
+    }
+  }
+`;
+export const createOrder = /* GraphQL */ `
+  mutation CreateOrder(
+    $input: CreateOrderInput!
+    $condition: ModelOrderConditionInput
+  ) {
+    createOrder(input: $input, condition: $condition) {
+      id
+      user
+      date
+      total
+      books {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const updateOrder = /* GraphQL */ `
+  mutation UpdateOrder(
+    $input: UpdateOrderInput!
+    $condition: ModelOrderConditionInput
+  ) {
+    updateOrder(input: $input, condition: $condition) {
+      id
+      user
+      date
+      total
+      books {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const deleteOrder = /* GraphQL */ `
+  mutation DeleteOrder(
+    $input: DeleteOrderInput!
+    $condition: ModelOrderConditionInput
+  ) {
+    deleteOrder(input: $input, condition: $condition) {
+      id
+      user
+      date
+      total
+      books {
+        nextToken
+      }
       createdAt
       updatedAt
     }

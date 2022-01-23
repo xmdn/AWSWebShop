@@ -1,0 +1,8 @@
+{
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authawswebshop4c12be3f",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

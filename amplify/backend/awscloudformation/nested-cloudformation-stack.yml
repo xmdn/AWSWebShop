@@ -1,0 +1,226 @@
+{
+	"AWSTemplateFormatVersion": "2010-09-09",
+	"Description": "Root stack for the Amplify AWS CloudFormation provider",
+	"Parameters": {
+		"DeploymentBucketName": {
+			"Description": "Name of the common deployment bucket provided by the parent stack",
+			"Type": "String",
+			"Default": "DeploymentBucket"
+		},
+		"AuthRoleName": {
+			"Type": "String",
+			"Default": "AuthRoleName"
+		},
+		"UnauthRoleName": {
+			"Type": "String",
+			"Default": "UnauthRoleName"
+		}
+	},
+	"Resources": {
+		"DeploymentBucket": {
+			"Type": "AWS::S3::Bucket",
+			"DeletionPolicy": "Retain",
+			"Properties": {
+				"BucketName": {
+					"Ref": "DeploymentBucketName"
+				}
+			}
+		},
+		"AuthRole": {
+			"Type": "AWS::IAM::Role",
+			"Properties": {
+				"RoleName": {
+					"Ref": "AuthRoleName"
+				},
+				"AssumeRolePolicyDocument": {
+					"Version": "2012-10-17",
+					"Statement": [
+						{
+							"Sid": "",
+							"Effect": "Deny",
+							"Principal": {
+								"Federated": "cognito-identity.amazonaws.com"
+							},
+							"Action": "sts:AssumeRoleWithWebIdentity"
+						}
+					]
+				}
+			}
+		},
+		"UnauthRole": {
+			"Type": "AWS::IAM::Role",
+			"Properties": {
+				"RoleName": {
+					"Ref": "UnauthRoleName"
+				},
+				"AssumeRolePolicyDocument": {
+					"Version": "2012-10-17",
+					"Statement": [
+						{
+							"Sid": "",
+							"Effect": "Deny",
+							"Principal": {
+								"Federated": "cognito-identity.amazonaws.com"
+							},
+							"Action": "sts:AssumeRoleWithWebIdentity"
+						}
+					]
+				}
+			}
+		},
+		"authawswebshop4c12be3f": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/amplify-awswebshop-dev-21044-deployment/amplify-cfn-templates/auth/awswebshop4c12be3f-cloudformation-template.json",
+				"Parameters": {
+					"env": "dev"
+				}
+			}
+		},
+		"storagepicstore": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/amplify-awswebshop-dev-21044-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+				"Parameters": {
+					"bucketName": "bucketstoreweb",
+					"selectedGuestPermissions": "s3:PutObject,s3:GetObject,s3:ListBucket,s3:DeleteObject",
+					"selectedAuthenticatedPermissions": "s3:PutObject,s3:GetObject,s3:ListBucket,s3:DeleteObject",
+					"unauthRoleName": {
+						"Ref": "UnauthRoleName"
+					},
+					"authRoleName": {
+						"Ref": "AuthRoleName"
+					},
+					"s3PrivatePolicy": "Private_policy_6149b6e8",
+					"s3ProtectedPolicy": "Protected_policy_6149b6e8",
+					"s3PublicPolicy": "Public_policy_6149b6e8",
+					"s3ReadPolicy": "read_policy_6149b6e8",
+					"s3UploadsPolicy": "Uploads_policy_6149b6e8",
+					"authPolicyName": "s3_amplify_6149b6e8",
+					"unauthPolicyName": "s3_amplify_6149b6e8",
+					"AuthenticatedAllowList": "ALLOW",
+					"GuestAllowList": "ALLOW",
+					"s3PermissionsAuthenticatedPrivate": "s3:PutObject,s3:GetObject,s3:DeleteObject",
+					"s3PermissionsAuthenticatedProtected": "s3:PutObject,s3:GetObject,s3:DeleteObject",
+					"s3PermissionsAuthenticatedPublic": "s3:PutObject,s3:GetObject,s3:DeleteObject",
+					"s3PermissionsAuthenticatedUploads": "s3:PutObject",
+					"s3PermissionsGuestPublic": "s3:PutObject,s3:GetObject,s3:DeleteObject",
+					"s3PermissionsGuestUploads": "s3:PutObject",
+					"env": "dev"
+				}
+			}
+		},
+		"functionProcessPayment": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/amplify-awswebshop-dev-21044-deployment/amplify-cfn-templates/function/ProcessPayment-cloudformation-template.json",
+				"Parameters": {
+					"deploymentBucketName": "amplify-awswebshop-dev-21044-deployment",
+					"s3Key": "amplify-builds/ProcessPayment-43436730456644345735-build.zip",
+					"env": "dev"
+				}
+			}
+		},
+		"functionCreateOrder": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/amplify-awswebshop-dev-21044-deployment/amplify-cfn-templates/function/CreateOrder-cloudformation-template.json",
+				"Parameters": {
+					"deploymentBucketName": "amplify-awswebshop-dev-21044-deployment",
+					"s3Key": "amplify-builds/CreateOrder-4754685a586750566161-build.zip",
+					"env": "dev"
+				}
+			}
+		},
+		"apiawswebshop": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/amplify-awswebshop-dev-21044-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"Parameters": {
+					"CreateAPIKey": 1,
+					"AuthCognitoUserPoolId": {
+						"Fn::GetAtt": [
+							"authawswebshop4c12be3f",
+							"Outputs.UserPoolId"
+						]
+					},
+					"S3DeploymentBucket": "amplify-awswebshop-dev-21044-deployment",
+					"S3DeploymentRootKey": "amplify-appsync-files/d9daf03439b7828ebb2963f4a3a0298dd75ec60a",
+					"env": "dev"
+				}
+			}
+		}
+	},
+	"Outputs": {
+		"Region": {
+			"Description": "CloudFormation provider root stack Region",
+			"Value": {
+				"Ref": "AWS::Region"
+			},
+			"Export": {
+				"Name": {
+					"Fn::Sub": "${AWS::StackName}-Region"
+				}
+			}
+		},
+		"StackName": {
+			"Description": "CloudFormation provider root stack ID",
+			"Value": {
+				"Ref": "AWS::StackName"
+			},
+			"Export": {
+				"Name": {
+					"Fn::Sub": "${AWS::StackName}-StackName"
+				}
+			}
+		},
+		"StackId": {
+			"Description": "CloudFormation provider root stack name",
+			"Value": {
+				"Ref": "AWS::StackId"
+			},
+			"Export": {
+				"Name": {
+					"Fn::Sub": "${AWS::StackName}-StackId"
+				}
+			}
+		},
+		"DeploymentBucketName": {
+			"Description": "CloudFormation provider root stack deployment bucket name",
+			"Value": {
+				"Ref": "DeploymentBucketName"
+			},
+			"Export": {
+				"Name": {
+					"Fn::Sub": "${AWS::StackName}-DeploymentBucketName"
+				}
+			}
+		},
+		"AuthRoleArn": {
+			"Value": {
+				"Fn::GetAtt": [
+					"AuthRole",
+					"Arn"
+				]
+			}
+		},
+		"UnauthRoleArn": {
+			"Value": {
+				"Fn::GetAtt": [
+					"UnauthRole",
+					"Arn"
+				]
+			}
+		},
+		"AuthRoleName": {
+			"Value": {
+				"Ref": "AuthRole"
+			}
+		},
+		"UnauthRoleName": {
+			"Value": {
+				"Ref": "UnauthRole"
+			}
+		}
+	}
+}
